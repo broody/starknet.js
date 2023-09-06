@@ -30,8 +30,10 @@ export * from './selector'; // Preserve legacy export structure
 export const transactionVersion = 1n;
 export const transactionVersion_2 = 2n;
 // TODO: check do we need to use feeTransactionVersion at all for feeEstimation ?
-export const feeTransactionVersion = 2n ** 128n + transactionVersion;
-export const feeTransactionVersion_2 = 2n ** 128n + transactionVersion_2;
+// export const feeTransactionVersion = 2n ** 128n + transactionVersion;
+// export const feeTransactionVersion_2 = 2n ** 128n + transactionVersion_2;
+export const feeTransactionVersion = 1n;
+export const feeTransactionVersion_2 = 2n;
 
 /**
  * Return versions based on version type, default transaction versions
